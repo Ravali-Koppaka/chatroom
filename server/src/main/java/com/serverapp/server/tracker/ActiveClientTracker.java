@@ -1,5 +1,6 @@
 package com.serverapp.server.tracker;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +23,7 @@ public class ActiveClientTracker {
 		try {
 			while (!serverContext.isTerminate()) {
 				Thread.sleep(SLEEP_TIME);
+				System.out.println(clientRegistry.getActiveClients());
 				LOGGER.info("Active Clients : {}", clientRegistry.getActiveClients());
 			}
 		} catch (InterruptedException e) {

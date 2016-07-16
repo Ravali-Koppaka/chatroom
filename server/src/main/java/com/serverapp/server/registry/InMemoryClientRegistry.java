@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.serverapp.server.data.ClientDetails;
 
-public class InMemoryClientRegistry {
+public class InMemoryClientRegistry implements ClientRegistry{
 	
 	private Map<String, Socket> mapper = new ConcurrentHashMap<String, Socket>();
 

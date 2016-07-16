@@ -1,0 +1,12 @@
+.classpath
+.project
+.settings
+client/*.classpath
+client/*.project
+client/*.settings
+commons/*.classpath
+commons/*.project
+commons/*.settings
+server/*.classpath
+server/*.project
+server/*.settings
